@@ -1,0 +1,15 @@
+{
+  "hash": "3d3df5b46be7c606585183ff3f5b11a3",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"index\"\n---\n\n::: {.cell}\n\n```{.r .cell-code}\n##Jy lyk mooi\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

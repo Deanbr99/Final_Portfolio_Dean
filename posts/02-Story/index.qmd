@@ -1,0 +1,89 @@
+---
+title: "Mini Project 2"
+---
+
+**Dean Brooker**
+
+**Mini Project**
+
+**A True Statistical American Hero**
+
+That is when it all changed. I changed it all.
+
+After graduation, in 1974, I decided to take some time off and travel around Vietnam. I arrived in Saigon, with my backpack, three shirts, and two pairs of pants. I had no plan.
+
+I heard a bomb explode, from far into the horizon. Then I heard another explosion. Then another. As the night went on, the bombs sounded as if they were getting closer to me. I remembered in school that sound travels at something like 300 meters a second so now wide awake, I decided to see how far the bombs were away from me. Way into the horizon, I would see a flash of light, and then I would count the amount of time it took for me to hear the blast. One…two…three… Fourteen seconds. Fourteen seconds multiplied by 300 meters means the blast was 4.2 kilometers away more or less. That was my estimate of how far the bombs were, away from me. After that, I could fall asleep, knowing the bombs were far away.
+
+The next morning, I decided I would go for a hike in the jungle. The jungle was thick and the air was humid. After an hour of walking, I bumped into a man wearing camouflage clothing. He ran towards me and shouted, “You are in a war zone, get away”. I shouted back, “No, I am on holiday, nothing will stop my holiday.”
+
+The man approached me and said, “I lost my platoon 20 minutes ago, I will never find them again !” I replied in a rather humorous tone, “Well we can find your platoon in no time.”
+
+I asked how fast the platoon walked. He said that they walk at a steady pace of 5 kilometers per hour. I explained that the marching speed was our parameter. The lost soldier said they were walking exactly due east. I simply explained that if they were twenty minutes ahead, a quarter of an hour, and moving at 5 km/h, they were 1.67km due east from us. We just need to walk a bit faster than 5km/h and we will catch them in no time.
+
+The lone soldier said, “Did you just use an estimator to infer the location of my platoon based on the parameter of their marching speed?”
+
+I smirked and replied, “Yes, yes I did !”
+
+I joined the lone soldier and in no time, we found his platoon. When we arrived we found the platoon, in a gunfight with the
+
+One soldier shouted, “I have no clue how many North Vietnamese soldiers there are?”
+
+I replied, “Well it would be easy to find out more or less how many there are !”
+
+There were ten big trees, North Vietnamese soldiers were hiding behind. I snuck over our platoon's cover and counted how many soldiers were behind two trees. I counted 30 behind two trees. Using my sample, we were up against 150 North Vietnamese soldiers.
+
+One soldier shouted, “We have lost 2 soldiers in the last 30 minutes, and they have lost 30 soldiers in the last 30 minutes!”
+
+I shouted, “We must keep fighting! If we define X as the number of enemies we eliminate in a given time, it’s a random variable following a predictable trend! So far, our killing rate is 30 North Vietnamese every 30 minutes, therefore following this we will kill the remaining 120 soldiers in two hours!
+
+Two hours and 20 minutes later, we had killed the entire opposing force.
+
+A frustrated soldier shouted, “You said it would take two hours!”:
+
+I explained, “Maybe the sample of the two trees was biased! “Maybe the two trees I checked had fewer soldiers than the others, meaning the original estimate of 150 soldiers could have been too low, maybe there were 180 soldiers. I didn’t account for variance either. Variance on the other hand refers to how much the number of enemies we eliminate fluctuates. Our kill rate of 30 per 30 minutes was based on a short sample, but in reality, some fighting waves are more intense than others. The randomness of battle means the actual elimination rate isn't constant and we should have accounted for variance !”
+
+The platoon of flabbergasted soldiers nodded and agreed.
+
+One soldier asked, “Who are you? Why are you here?”
+
+I simply replied, “I am on holiday here in Vietnam, I am just a boy from South Africa!”
+
+A soldier shouted, “We may have won the battle, but we still need to get back to base!”
+
+I shouted, “I can help!
+
+There were three routes: one along the riverbank, one through the thick of the jungle, and one over the mountain. Based on my reading of war novels, I knew there would be more enemy troops along the river route, as it was the easiest and closest to water. Based on my reading, I decided the jungle route gave us the most cover!
+
+I shouted, "Given the observed data, enemy patrol patterns, terrain difficulty, and past escape routes, the likelihood function suggests the jungle path has the highest probability of getting us back safely,"
+
+After three hours of walking, we arrived safely at the base. The one soldier said that I needed to meet General Johnson, as he would thank us for getting his troops back safely.
+
+I entered the war room and saw General Johnson playing a war game with die. I watched and worked out General Johnson was making mistakes!
+
+“You are basing your strategy on just a few dice rolls, that is not a reliable approach, what you need is a proper random sample !” A single roll is not enough but if you roll enough times, you get a better estimate of the true probabilities !”, I explained.
+
+One general folded his arms and said, So you saying we need more data?”
+
+I nodded. "Exactly. A good estimator is consistent, meaning that as you increase the sample size, your results get closer to the true probabilities. If you roll enough times, your estimates of battlefield success rates will stabilize and reflect reality more accurately!"
+
+I sat in the room and continued to watch the generals play the war game.
+
+A soldier ran into the room and said, there are ten ships in the bay coming to attack, we need to shoot them down.
+
+The general shouted, “Our missiles have an 80% success rate, so let's just take 12 missiles to be the same, then surely we will sink all ten ships !”
+
+I replied, “Sadly that is wrong !”
+
+The president of the US had just walked in and asked, “Who exactly said that and who are you !”
+
+I answered, “My name is Dean, I am on holiday!”
+
+I explained that we had a binomial problem on our hands. If the probability of success was 80% per missile, using a binomial distribution, with ten successes needed, we would need 16 missiles to ensure 99.99% success in shouting down the ten boats !”
+
+The general shouted, “You heard the holidaymaker, grab 16 missiles”
+
+After this long day, I was becoming quite peckish. I thanked the general and president for having me and walked down the street in search of the nearest restaurant.
+
+Two days later, I returned to the USA. When I landed at the US airport, I saw a headline in one of the newspapers that said, “True American Hero: Boy on holiday, saves lost soldier, wins a battle in the Vietnamese jungle, fixes US war game, and shoots down 10 North Vietnamese ships !”
+
+I thought to myself, what an incredible story. I grabbed the newspaper and read the story. It was incredible. I hope one day, I get to meet this boy!

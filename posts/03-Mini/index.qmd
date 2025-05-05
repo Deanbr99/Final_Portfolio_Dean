@@ -1,0 +1,230 @@
+---
+title: "Mini-Project-3"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(tibble)
+```
+
+```{r}
+p=0.1
+
+generate_samp_prop <- function(n,p) {
+  
+  x <- rbinom(1, n, p) # randomly generate number of successes for the sample
+  
+  ## number of successes divided by sample size
+  phat <- x / n
+  lb <-phat -2.132*sqrt(phat* (1-phat)/n)
+  ub <-phat +2.132*sqrt(phat* (1-phat)/n)
+  
+  prop_df <-tibble(phat,lb,ub)
+  return(prop_df)
+}
+generate_samp_prop(n=5, p=0.1)
+
+n_sim <-5000
+
+prop_ci_df <-map(1:n_sim, \ (i) generate_samp_prop(n=5, p =0.1)) |> bind_rows()
+
+prop_ci_df <- prop_ci_df |> mutate(ci_width = ub - lb,
+                                   ci_cover_ind = if_else(p > lb & p < ub,
+                                                          true = 1, 
+                                                          false = 0))
+
+prop_ci_df |> summarise(avg_width = mean(ci_width),
+                        coverage_rate = mean(ci_cover_ind))
+
+```
+
+```{r}
+p=0.1
+generate_samp_prop <- function(n,p) {
+  
+  x <- rbinom(1, n, p) # randomly generate number of successes for the sample
+  
+  ## number of successes divided by sample size
+  phat <- x / n
+  lb <-phat -2.132*sqrt(phat* (1-phat)/n)
+  ub <-phat +2.132*sqrt(phat* (1-phat)/n)
+  
+  prop_df <-tibble(phat,lb,ub)
+  return(prop_df)
+}
+generate_samp_prop(n=5, p=0.1)
+
+n_sim <-5000
+
+prop_ci_df <-map(1:n_sim, \ (i) generate_samp_prop(n=5, p =0.1)) |> bind_rows()
+
+prop_ci_df <- prop_ci_df |> mutate(ci_width = ub - lb,
+                                   ci_cover_ind = if_else(p > lb & p < ub,
+                                                          true = 1, 
+                                                          false = 0))
+
+prop_ci_df |> summarise(avg_width = mean(ci_width),
+                        coverage_rate = mean(ci_cover_ind))
+
+```
+
+```{r}
+p=0.55
+generate_samp_prop <- function(n,p) {
+  
+  x <- rbinom(1, n, p) # randomly generate number of successes for the sample
+  
+  ## number of successes divided by sample size
+  phat <- x / n
+  lb <-phat -2.132*sqrt(phat* (1-phat)/n)
+  ub <-phat +2.132*sqrt(phat* (1-phat)/n)
+  
+  prop_df <-tibble(phat,lb,ub)
+  return(prop_df)
+}
+generate_samp_prop(n=5, p=0.55)
+
+n_sim <-5000
+
+prop_ci_df <-map(1:n_sim, \ (i) generate_samp_prop(n=5, p =0.55)) |> bind_rows()
+
+prop_ci_df <- prop_ci_df |> mutate(ci_width = ub - lb,
+                                   ci_cover_ind = if_else(p > lb & p < ub,
+                                                          true = 1, 
+                                                          false = 0))
+
+prop_ci_df |> summarise(avg_width = mean(ci_width),
+                        coverage_rate = mean(ci_cover_ind))
+
+```
+
+```{r}
+p=0.1
+generate_samp_prop <- function(n,p) {
+  
+  x <- rbinom(1, n, p) # randomly generate number of successes for the sample
+  
+  ## number of successes divided by sample size
+  phat <- x / n
+  lb <-phat -1.684*sqrt(phat* (1-phat)/n)
+  ub <-phat +1.6842*sqrt(phat* (1-phat)/n)
+  
+  prop_df <-tibble(phat,lb,ub)
+  return(prop_df)
+}
+generate_samp_prop(n=40, p=0.1)
+
+n_sim <-5000
+
+prop_ci_df <-map(1:n_sim, \ (i) generate_samp_prop(n=40, p =0.1)) |> bind_rows()
+
+prop_ci_df <- prop_ci_df |> mutate(ci_width = ub - lb,
+                                   ci_cover_ind = if_else(p > lb & p < ub,
+                                                          true = 1, 
+                                                          false = 0))
+
+prop_ci_df |> summarise(avg_width = mean(ci_width),
+                        coverage_rate = mean(ci_cover_ind))
+```
+
+```{r}
+p=0.55
+generate_samp_prop <- function(n,p) {
+  
+  x <- rbinom(1, n, p) # randomly generate number of successes for the sample
+  
+  ## number of successes divided by sample size
+  phat <- x / n
+  lb <-phat -1.684*sqrt(phat* (1-phat)/n)
+  ub <-phat +1.6842*sqrt(phat* (1-phat)/n)
+  
+  prop_df <-tibble(phat,lb,ub)
+  return(prop_df)
+}
+generate_samp_prop(n=40, p=0.55)
+
+n_sim <-5000
+
+prop_ci_df <-map(1:n_sim, \ (i) generate_samp_prop(n=40, p =0.55)) |> bind_rows()
+
+prop_ci_df <- prop_ci_df |> mutate(ci_width = ub - lb,
+                                   ci_cover_ind = if_else(p > lb & p < ub,
+                                                          true = 1, 
+                                                          false = 0))
+
+prop_ci_df |> summarise(avg_width = mean(ci_width),
+                        coverage_rate = mean(ci_cover_ind))
+```
+
+```{r}
+p=0.1
+generate_samp_prop <- function(n,p) {
+  
+  x <- rbinom(1, n, p) # randomly generate number of successes for the sample
+  
+  ## number of successes divided by sample size
+  phat <- x / n
+  lb <-phat -1.645*sqrt(phat* (1-phat)/n)
+  ub <-phat +1.645*sqrt(phat* (1-phat)/n)
+  
+  prop_df <-tibble(phat,lb,ub)
+  return(prop_df)
+}
+generate_samp_prop(n=300, p=0.1)
+
+n_sim <-5000
+
+prop_ci_df <-map(1:n_sim, \ (i) generate_samp_prop(n=300, p =0.1)) |> bind_rows()
+
+prop_ci_df <- prop_ci_df |> mutate(ci_width = ub - lb,
+                                   ci_cover_ind = if_else(p > lb & p < ub,
+                                                          true = 1, 
+                                                          false = 0))
+
+prop_ci_df |> summarise(avg_width = mean(ci_width),
+                        coverage_rate = mean(ci_cover_ind))
+```
+
+```{r}
+p=0.55
+generate_samp_prop <- function(n,p) {
+  
+  x <- rbinom(1, n, p) # randomly generate number of successes for the sample
+  
+  ## number of successes divided by sample size
+  phat <- x / n
+  lb <-phat -1.645*sqrt(phat* (1-phat)/n)
+  ub <-phat +1.645*sqrt(phat* (1-phat)/n)
+  
+  prop_df <-tibble(phat,lb,ub)
+  return(prop_df)
+}
+generate_samp_prop(n=300, p=0.55)
+
+n_sim <-5000
+
+prop_ci_df <-map(1:n_sim, \ (i) generate_samp_prop(n=300, p =0.55)) |> bind_rows()
+
+prop_ci_df <- prop_ci_df |> mutate(ci_width = ub - lb,
+                                   ci_cover_ind = if_else(p > lb & p < ub,
+                                                          true = 1, 
+                                                          false = 0))
+
+prop_ci_df |> summarise(avg_width = mean(ci_width),
+                        coverage_rate = mean(ci_cover_ind))
+```
+
+```         
+|  |         | $n = $5 | $n = $40 | $n = $300 |
+|:----:|:-----------------:|:-------------:|:------------:|:------------:|
+| $p = 0.1$   | Coverage Rate       | 0.4   |  0.9072     |  0.8838         |
+| $p = 0.55$   | Coverage Rate       |0.93     |0.8846   | 0.897    |
+|    |                     |               |              |              |
+| $p = 0.1$    | Average Width        |0.332   |  0.152  |   0.057       |
+| $p = 0.55$    | Average Width        |0.817  |  0.262     |  0.094      |
+
+
+: Table of Results {.striped .hover}
+```

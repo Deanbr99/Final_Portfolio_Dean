@@ -1,0 +1,21 @@
+---
+title: "Mini-Reflect"
+---
+
+Question 1
+
+The first mini project is looking at the standard error and expected value of different distributions like the uniform, normal and beta distribution for example.
+
+Mini-project two related to the coursework by using the modern approach to teaching math stat. By writing a story with defintions and terms, you are having to not just do the math but understand it which is what the course is trying to achieve. In my mini-project 2, I explained missiles strike rate using a binonmial distribution, and this is related to the coursework goal of being able to explain ideas from the class, not just do the math.
+
+After we have looked at where the p value comes from and using p values a lot, mini-project 5 serves as warning to, us future possible statisticians
+
+library(usethis)
+
+install.packages("")
+
+usethis::usegit
+
+usethis::use_github()
+
+I personally really enjoyed the mini-projects as it gave me some time to do repeated processes and see what is happening. When we would have to change small things of code, many times in different places, it really helped me understand the code and then the concepts as I am someone who needs to repeat tasks to fully understand it.
