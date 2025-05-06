@@ -1,7 +1,0 @@
----
-title: "index"
----
-
-```{r}
-##Jy lyk mooi
-```
